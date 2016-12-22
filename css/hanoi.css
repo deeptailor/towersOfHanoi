@@ -1,0 +1,125 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: black;
+}
+
+h1 {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: auto;
+  right: auto;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+h2{
+  position: absolute;
+  text-align: center;
+  bottom: 50px;
+  left: auto;
+  right: auto;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.hanoi {
+  margin: 30px auto;
+  width: 600px;
+}
+
+ul {
+  float: left;
+  width: 180px;
+  padding: 0 0 10px 0;
+  border-bottom: 10px solid tomato;
+  cursor: pointer;
+}
+
+ul:hover {
+  border-color: #66ff33;
+}
+
+ul.selected {
+  border-color: #e1e1e1;
+}
+
+ul:nth-child(2) {
+  margin: 0 20px;
+}
+
+li {
+  width: 0px;
+  margin: 10px auto;
+  height: 50px;
+  background: #0078ff;
+  border-radius: 25px;
+}
+
+li.disk-1 {
+  width: 60px;
+}
+
+li.disk-2 {
+  width: 120px;
+}
+
+li.disk-3 {
+  width: 180px;
+}
+
+.game-over ul {
+  cursor: default;
+  border-color: #ff6600;
+}
+
+.game-over li {
+  background: #ef2929;
+}
+
+.game-won{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.9);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  left: 0;
+}
+
+#message{
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  list-style: none;
+  padding-bottom: 10px;
+}
